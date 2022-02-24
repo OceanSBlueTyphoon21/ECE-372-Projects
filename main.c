@@ -61,7 +61,7 @@ void I2CTransmit(void)
     HWREG(I2C1BA + 0xA4) = 0x8603;      // Initiate a START/STOP condition
 
     while((HWREG(I2C1BA + 0x24) & 0x10) != 0x10){} // Polling the XRDY bit
-    HWREG(I2C1BA + 0x28) = 0x10;    //
+    HWREG(I2C1BA + 0x2C) = 0x10;    // I2C_IRQENABLE_SET
     HWREG(I2C1BA + 0x9C) = 0xA9;    // Data to Send
 }
 
