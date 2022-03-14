@@ -10,7 +10,7 @@
  *              clockwise when a button is pressed. The Program can also be used with
  *              a logic analyzer to view the I2C signals generated.
   * STARTUP FILE EDITS:
- * - Line 120:      LDR   r10, = main2
+ * - Line 120:      LDR   r10, = main
  * - Line 165:      LDR   pc, =INT_DIRECTOR
  */
 
